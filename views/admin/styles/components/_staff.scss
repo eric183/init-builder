@@ -1,0 +1,14 @@
+.staff-content {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+}
+
+.staff-filter {
+    display: flex;
+    &>* {
+        margin-right: 20px;
+    }
+}

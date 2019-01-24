@@ -1,0 +1,720 @@
+.all-collection-content {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-public {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    //background:#ffffff;
+    box-shadow: 6px 0 9px 0 rgba(89, 183, 255, 0.17);
+    z-index: 1;
+    flex-shrink: 0;
+    //border-image: url('/assets/toBoom/images/designManager/leftPublic/rightBorder.png');
+    //border-image-source: url('/assets/toBoom/images/designManager/leftPublic/rightBorder.png');
+    //border-image-slice: 0 100% 0 0;
+    //border-image-width: 0.05rem;
+    //border-image-repeat: repeat;
+    //border: 4px solid transparent;
+    //background: url('/assets/toBoom/images/designManager/leftPublic/rightBorder.png') right 0 no-repeat;
+}
+
+.small-left-public {
+    //position: fixed;
+    //background: url('/assets/toBoom/images/designManager/leftPublic/rightBorder.png') right 0 no-repeat;
+    position: fixed;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(/assets/toBoom/images/designManager/leftPublic/rightBorder.png) right 0 no-repeat;
+    background-size: contain;
+}
+
+.new-design-btn {
+    width: 160px;
+    //margin-left: 50px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 55px;
+    cursor: pointer;
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.all-picture-btn {
+    position: relative;
+    //height: 388px;
+    height: 402px;
+    //background-color: skyblue;
+}
+
+.allworks-area {
+    position: absolute;
+    left: 45px;
+    top: 0;
+    width: 78px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.allworks-pic {
+    width: 78px;
+    height: 81px;
+}
+
+.allworks-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.allworks-text {
+    font-size: 16px;
+    //height: 48px;
+    //line-height: 48px;
+    font-family: 'uzi';
+    color: #000000;
+    letter-spacing: 0.89px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.mycollection-area {
+    position: absolute;
+    left: 45px;
+    top: 140px;
+    width: 78px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.mycollection-pic {
+    width: 78px;
+    height: 81px;
+}
+
+.mycollection-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.mycollection-text {
+    font-size: 16px;
+    //height: 48px;
+    //line-height: 48px;
+    font-family: 'uzi';
+    color: #000000;
+    letter-spacing: 0.89px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.recyclebin-area {
+    position: absolute;
+    //left: 45px;
+    //top: 280px;
+    right: 45px;
+    top: 185px;
+    width: 78px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.recyclebin-pic {
+    width: 78px;
+    height: 81px;
+}
+
+.recyclebin-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.recyclebin-text {
+    font-size: 16px;
+    //height: 48px;
+    //line-height: 48px;
+    font-family: 'uzi';
+    color: #000000;
+    letter-spacing: 0.89px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.recentlymodify-area {
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    width: 78px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.recentlymodify-pic {
+    width: 78px;
+    height: 81px;
+}
+
+.recentlymodify-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.recentlymodify-text {
+    font-size: 16px;
+    //height: 48px;
+    //line-height: 48px;
+    font-family: 'uzi';
+    color: #000000;
+    letter-spacing: 0.89px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.productmana-area {
+    position: absolute;
+    //right: 45px;
+    //top: 185px;
+    left: 45px;
+    top: 280px;
+    width: 78px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.productmana-pic {
+    width: 78px;
+    height: 81px;
+}
+
+.productmana-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.productmana-text {
+    font-size: 16px;
+    //height: 48px;
+    //line-height: 48px;
+    font-family: 'uzi';
+    color: #000000;
+    letter-spacing: 0.89px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.left-footer {
+    width: 300px;
+    height: 281px;
+    background-image: url('/assets/toBoom/images/designManager/leftPublic/leftFooterBg.png');
+    background-repeat: no-repeat;
+    //background-size: 300px 281px;
+    background-size: 295px 281px;
+    background-position: 0 0;
+    padding: 215px 22px 0 17px;
+    box-sizing: border-box;
+}
+
+.left-footer-info span,
+.left-footer-info i {
+    //margin: 202px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.78px;
+}
+
+.left-footer-info i {
+    font-style: normal;
+    margin-left: 6px;
+}
+
+.progress-area {
+    width: 260px;
+}
+
+.progress-area .ant-progress-status-success .ant-progress-bg {
+    background-color: #f5a623;
+}
+
+.my-collection {
+    position: relative;
+    //width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    background-image: url('/assets/toBoom/images/designManager/designbg.jpg');
+    background-repeat: repeat;
+    background-size: 19px 19px;
+    background-position: 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 75px;
+}
+
+.collection-pic {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 225px;
+    height: 57px;
+}
+
+.collection-pic img {
+    width: 100%;
+}
+
+.collection-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    //margin-top: 40px;
+    width: 100%;
+    //height: 43px;
+    padding: 40px 0;
+}
+
+.collection-menu-btn {
+    width: 145px;
+    height: 42px;
+}
+
+.collection-menu-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-content {
+    width: 100%;
+    //height:400px;
+    //display: flex;
+    //flex-direction: column;
+    //box-sizing:border-box;
+    //margin-top:70px;
+}
+
+.collection-catalog {
+    display: flex;
+    width: 100%;
+    //height: 115px;
+    margin: 50px 0;
+    font-size: 18px;
+    //line-height: 115px;
+    color: #1b2437;
+}
+
+.collection-catalog-left {
+    flex: 1;
+    margin: auto 0;
+}
+
+.collection-catalog-name {
+    height: 22px;
+    line-height: 22px;
+    display: flex;
+}
+
+.collection-file-name {
+    display: flex;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    span {
+        max-width: 65px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.collection-division-pic {
+    width: 10px;
+    height: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 22px;
+    background: url('/assets/toBoom/images/designManager/divisionPic.png');
+    background-size: 8px 14px;
+    background-position: 0 6px;
+    background-repeat: no-repeat;
+}
+
+.collection-catalog-right {
+    width: 540px;
+    //height: 115px;
+    display: flex;
+}
+
+.collection-search-bar {
+    width: 219px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: url('/assets/toBoom/images/designManager/searchBorder.png');
+    background-repeat: no-repeat;
+    background-size: 219px 35px;
+    background-position: 0 0;
+    margin: auto 0;
+}
+
+.collection-search-bar input {
+    float: left;
+    border: 0 none;
+    outline: none;
+    width: 180px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.collection-search-bar .collection-search-pic {
+    float: right;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    background-image: url('/assets/toBoom/images/designManager/search.png');
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-position: 1px 2px;
+}
+
+.collection-icon-btn {
+    margin-left: 25px;
+    //width:120px;
+    //height:30px;
+    display: flex;
+    align-items: center;
+}
+
+.collection-icon-btn i {
+    padding: 0 17px;
+}
+
+.collection-file {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collection-addFile {
+    width: 245px;
+    height: 127px;
+    background-image: url('/assets/toBoom/images/designManager/addFileBG.png');
+    background-repeat: no-repeat;
+    background-size: 245px 127px;
+    background-position: 0 0;
+    background-color: #eef1f4;
+    margin-right: 40px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 rgba(77, 177, 255, 0.19);
+    //text-align: center;
+    //font-size: 16px;
+    //color: #a8bfdc;
+    //background-color: #fff;
+    //box-shadow: 0 6px 10px 0 rgba(77,177,255,0.19);
+    //border-radius: 6px;
+    //letter-spacing: 0;
+    //font-family: "PingFangSC-Semibold";
+}
+
+.collection-addFile .collection-addFile-btn {
+    width: 65px;
+    height: 45px;
+    background-image: url('/assets/toBoom/images/designManager/addFileBtnBG.png');
+    background-repeat: no-repeat;
+    background-size: 65px 46px;
+    margin: 25px auto;
+    font-size: 14px;
+    line-height: 45px;
+    font-family: "uzi";
+    color: #000000;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 7px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.collection-newFile {
+    position: relative;
+    display: flex;
+    width: 245px;
+    height: 127px;
+    background-image: url('/assets/toBoom/images/designManager/addFileBG.png');
+    background-repeat: no-repeat;
+    background-size: 245px 127px;
+    background-position: 0 0;
+    margin-right: 40px;
+    margin-bottom: 35px;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 rgba(77, 177, 255, 0.19);
+    background-color: #ffffff;
+}
+
+.collectionFile-detailed-btn {
+    position: absolute;
+    top: 10px;
+    right: -52px;
+    width: 60px;
+    //height: 168px;
+    background-color: #f5f5f9;
+    border: 2px solid #000000;
+    z-index: 1;
+    //display: none;
+}
+
+.collectionFile-detailed-btn p {
+    margin: 0;
+    padding: 0;
+    //width: 78px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    font-family: HYHanHeiW;
+    //padding-left: 10px;
+    //box-sizing: border-box;
+}
+
+.collectionFile-detailed-btn p:hover {
+    background-color: #D9DFE6;
+    cursor: pointer;
+}
+
+.collection-newFile-icon {
+    width: 65px;
+    height: 46px;
+    margin: 40px 15px 38px 26px;
+    z-index: 1;
+    //background-color: #f18d04;
+}
+
+.collection-newFile-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-newFile-dec {
+    flex: 1;
+    height: 52px;
+    margin-top: 38px;
+}
+
+.collection-newFile-dec p {
+    width: 110px;
+    height: 22px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b2437;
+    letter-spacing: 0;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.collection-newFile-dec span {
+    height: 20px;
+    font-size: 14px;
+    color: #98a0a6;
+    letter-spacing: 0;
+    text-align: left;
+    font-family: PingFangSC-Semibold;
+}
+
+.collection-function-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 15px;
+    line-height: 15px;
+    //font-size: 16px;
+    //text-align: center;
+    //border-radius: 50%;
+    //color: #fff;   
+    //background-color:#a4b3c6;
+    //opacity:0.8;
+}
+
+.collection-function-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-topLeft-corner {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 80px;
+    height: 72px;
+}
+
+.collection-topLeft-corner img {
+    width: 100%;
+    height: 100%;
+}
+
+.all-collection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.collection-show-pic {
+    width: 210px;
+    height: 335px;
+    //margin-right: 50px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    //background-color: #fff;
+}
+
+.collection-single-show {
+    position: relative;
+    display: flex;
+    width: 210px;
+    height: 298px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: url('/assets/toBoom/images/designManager/singleShowBG.png') top left no-repeat;
+    background-size: 210px 298px;
+    border-radius: 6px;
+    box-shadow: 0 10px 17px 0 rgba(77, 177, 255, 0.19);
+}
+
+.collection-published {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+}
+
+.collection-single-pic {
+    width: 155px;
+    //height: 208px;
+    margin: 0 auto;
+    //display:flex;
+    //justify-content: column;
+    //align-content: center;
+    //padding-top: 22px;
+}
+
+.collection-single-pic img {
+    width: 100%;
+}
+
+.collection-show-pic p.collection-title {
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    //margin-top: 15px;
+    //margin-left: 5px;
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 16px;
+    color: #1b2437;
+    letter-spacing: 0;
+    font-weight: 600;
+    //text-align: left;
+    //font-family: PingFangSC-Medium;
+}
+
+.collection-more-btn {
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    width: 20px;
+    height: 15px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.collection-more-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-detailed-btn {
+    position: absolute;
+    top: 6px;
+    right: -63px;
+    width: 78px;
+    //height: 168px;
+    background-color: #f5f5f9;
+    border: 2px solid #000000;
+    z-index: 9;
+    //display: none;
+}
+
+.collection-detailed-btn p {
+    margin: 0;
+    padding: 0;
+    //width: 78px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    font-family: HYHanHeiW;
+    //padding-left: 20px;
+    //box-sizing: border-box;
+}
+
+.collection-detailed-btn p:hover {
+    background-color: #D9DFE6;
+    cursor: pointer;
+}
+
+.collection-addFile-modal {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.collection-addFile-modal input.collection-file-input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding-left: 10px;
+}
+
+body .collection-addFile-modal input.invalid {
+    border-bottom-color: red
+}
+
+.collection-addFile-modal .file-input-error {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    padding-left: 46px;
+    line-height: 25px;
+    margin-bottom: 0;
+    transition: all 0.5s;
+}
+
+.collectFileBtn-show {
+    visibility: visible;
+}
+
+.collectFileBtn-hide {
+    visibility: hidden;
+}
+
+.showPublishBtn-show {
+    display: block;
+}
+
+.showPublishBtn-hide {
+    display: none;
+}

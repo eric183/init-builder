@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前台应用</title>
+    <link rel="stylesheet" href="/assets/admin/style.css">
+    <style>
+        .circle-wrapper {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+        
+        .circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            padding: 2px;
+            border-radius: 50px;
+            color: #fff;
+            background: #40a9ff;
+            cursor: pointer;
+            box-shadow: 3px 5px 1px rgb(210, 202, 187);
+            transition: all 0.1s linear;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+        }
+        
+        .circle:active {
+            margin-top: 5px;
+            box-shadow: 1px 1px 1px rgb(210, 202, 187);
+            background: rgba(64, 169, 255, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <!-- 接收端。监听storage变动更新，试用html5(兼容需注意) -->
+
+        <div class="circle-wrapper">
+            <!-- <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div> -->
+        </div>
+        <iframe src="" id="stayIframe" style="display: none"></iframe>
+
+        <div id="res"></div>
+    </div>
+    <script src="/assets/application/index.js"></script>
+    <script>
+        // document.getElementById("res").innerHTML = "接收到的消息：" + localStorage.getItem('loginToken');
+        // window.addEventListener('storage', (event) => {
+        //     document.getElementById("res").innerHTML = "接收到的消息：" + localStorage.getItem('loginToken');
+        // });
+        // window.addEventListener("message", (e) => {
+        //     localStorage.setItem('loginToken', e.data);
+        //     document.getElementById("res").innerHTML = "接收到的消息：" + localStorage.getItem('loginToken');
+        // }, false);
+    </script>
+</body>
+
+</html>

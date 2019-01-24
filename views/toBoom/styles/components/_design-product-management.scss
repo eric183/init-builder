@@ -1,0 +1,609 @@
+.product-management {
+    position: relative;
+    //width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    background-image: url('/assets/toBoom/images/designManager/designbg.jpg');
+    background-repeat: repeat;
+    background-size: 19px 19px;
+    background-position: 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 75px;
+    .ant-menu-item {
+        padding: 0;
+    }
+}
+
+.ant-menu-submenu {
+    max-height: 360px;
+    overflow-y: scroll;
+    .ant-menu-item {
+        padding: 0;
+    }
+    .ant-menu-submenu-title {
+        font-family: "uzi";
+    }
+}
+
+.screen-button-link {
+    text-align: center;
+    font-family: "uzi";
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+.ant-dropdown {
+    li.ant-menu-item {
+        padding: 0;
+    }
+}
+
+.product-pic {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 225px;
+    height: 57px;
+}
+
+.product-pic img {
+    width: 100%;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+.product-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    //margin-top: 40px;
+    width: 100%;
+    //height: 43px;    
+    //margin: 43px 0;
+    padding: 40px 0;
+}
+
+.product-menu-btn {
+    width: 145px;
+    height: 42px;
+    background: url('/assets/toBoom/images/designManager/menubtn.png') no-repeat center center;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.product-theme {
+    display: flex;
+    justify-content: space-between;
+    //padding: 50px 0 35px 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.product-theme>ul {
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-around;
+    //align-content: center;
+    //flex: 1;
+    font-size: 0px;
+    height: 100%;
+    //overflow-x: auto;
+    //white-space: nowrap;
+    //scrollbar-face-color:transparent;
+}
+
+.product-theme>ul>li {
+    list-style: none;
+    width: 228px;
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+    font-family: "uzi";
+    padding: 6px 0;
+    //border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    height: 63px;
+    line-height: 50px;
+}
+
+.product-theme ul>li>a {
+    //text-decoration: none;
+    //color: #000;
+    //width:100%;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+li.clickActive {
+    background: url('/assets/toBoom/images/designManager/clickActiveBg.png') left top no-repeat;
+}
+
+.product-theme>.operation-record {
+    margin-right: 45px;
+    width: 145px;
+    height: 41px;
+    cursor: pointer;
+}
+
+.product-theme .operation-record img {
+    width: 100%;
+}
+
+.screen-button {
+    width: 1440px;
+    height: 78px;
+    font-size: 16px;
+    letter-spacing: 4.44px;
+    font-family: "uzi";
+    line-height: 78px;
+    //background: url('/assets/toBoom/images/designManager/screenButtonBg.png') left top no-repeat;
+    //background-size:1440px 78px;
+    background-image: url('/assets/toBoom/images/designManager/screenButtonBg.png');
+    background-repeat: no-repeat;
+    background-size: 1440px 78px;
+    background-position: 0 0;
+    .ant-dropdown-link {
+        display: inline-block;
+        width: 170px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+.screen-button .single-screen-button {
+    //margin-right: 10px;
+    width: 140px;
+    margin: 45px;
+}
+
+.product-content {
+    width: 100%;
+    margin-top: 10px;
+    //height:400px;
+    //display: flex;
+    //flex-direction: column;
+    //box-sizing:border-box;
+    //margin-top:70px;
+}
+
+.product-catalog {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //height: 115px;
+    margin: 35px 0;
+    font-size: 18px;
+    //line-height: 115px;
+    color: #1b2437;
+}
+
+.product-left {
+    .ant-checkbox-wrapper {
+        &>span {
+            font-family: "uzi";
+            font-weight: bolder;
+        }
+        .ant-checkbox-inner {
+            border: 2px solid #000;
+        }
+        .ant-checkbox-checked .ant-checkbox-inner,
+        .ant-checkbox-indeterminate .ant-checkbox-inner {
+            background-color: #121213;
+            border-color: #121213;
+        }
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+        .ant-checkbox:hover .ant-checkbox-inner,
+        .ant-checkbox-input:focus+.ant-checkbox-inner {
+            border-color: #121213;
+        }
+    }
+}
+
+.product-right {
+    //width:540px;
+    //height: 115px;
+    display: flex;
+}
+
+.productu-time-data {
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 4.44px;
+    font-family: "uzi";
+}
+
+.product-search {
+    width: 219px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: url('/assets/toBoom/images/designManager/searchBorder.png');
+    background-repeat: no-repeat;
+    background-size: 219px 35px;
+    background-position: 0 0;
+    margin: auto 35px;
+}
+
+.product-search input {
+    float: left;
+    border: 0 none;
+    outline: none;
+    width: 180px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.product-search .product-search-pic {
+    float: right;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    background-image: url('/assets/toBoom/images/designManager/search.png');
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-position: 1px 2px;
+}
+
+.product-buttons-group {
+    display: flex;
+    flex-direction: row;
+    button {
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-family: "uzi";
+        font-size: 16px;
+        margin: 0 10px;
+        cursor: pointer;
+        background: #fff url('/assets/toBoom/images/bottomBG.png') no-repeat left top;
+        background-size: 100% 100%;
+    }
+}
+
+.product-icon-btn {
+    //margin-left: 25px;
+    //width:120px;
+    //height:30px;
+    display: flex;
+    align-items: center;
+}
+
+.product-icon-btn i {
+    padding: 0 17px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ant-checkbox-group {
+    width: 100%;
+}
+
+.all-product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    .all-product-empty {
+        width: 100%;
+        text-align: center;
+        p {
+            padding: 20px 0;
+            margin: 0;
+            font-size: 18px;
+            font-family: "uzi"
+        }
+    }
+}
+
+.show-product-dec {
+    position: relative;
+    width: 210px;
+    height: 360px;
+    margin-right: 32px;
+    margin-bottom: 20px;
+    .ant-checkbox-wrapper {
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        z-index: 2;
+        .ant-checkbox-checked .ant-checkbox-inner,
+        .ant-checkbox-indeterminate .ant-checkbox-inner {
+            background-color: #121213;
+            border-color: #121213;
+        }
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+        .ant-checkbox:hover .ant-checkbox-inner,
+        .ant-checkbox-input:focus+.ant-checkbox-inner {
+            border-color: #121213;
+        }
+    }
+}
+
+.single-product {
+    position: relative;
+    display: flex;
+    width: 210px;
+    height: 298px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: url('/assets/toBoom/images/designManager/singleShowBG.png') top left no-repeat;
+    background-size: 210px 298px;
+    border-radius: 6px;
+    box-shadow: 0 10px 17px 0 rgba(77, 177, 255, 0.19);
+}
+
+.single-product-pic {
+    width: 155px;
+    //height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    //display:flex;
+    //justify-content: column;
+    //align-content: center;
+    //padding-top: 22px;
+}
+
+.single-product-pic img {
+    width: 100%;
+}
+
+.show-product-dec p.product-title {
+    width: 95%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #1b2437;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 8px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.show-product-dec .delete-time {
+    margin-left: 7px;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #98a0a6;
+}
+
+.show-product-dec .delete-time span {
+    margin-left: 10px;
+}
+
+.product-more-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    width: 55px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    font-family: "uzi";
+    color: #b1b3be;
+}
+
+.product-more-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.detailed-product-btn {
+    position: absolute;
+    top: 6px;
+    right: -63px;
+    width: 78px;
+    //height: 168px;
+    background-color: #f5f5f9;
+    border: 2px solid #000000;
+    z-index: 999;
+    //display: none;
+}
+
+.detailed-product-btn p {
+    margin: 0;
+    padding: 0;
+    //width: 78px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    font-family: HYHanHeiW;
+    //padding-left: 20px;
+    //box-sizing: border-box;
+}
+
+.detailed-product-btn p:hover {
+    background-color: #D9DFE6;
+    cursor: pointer;
+}
+
+.edit-modal-style {
+    .ant-modal-title {
+        font-family: "uzi";
+    }
+    button {
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-family: "uzi";
+    }
+    .modal-image-block {
+        span {
+            display: block;
+            margin: 0 auto;
+            width: 260px;
+            height: 432px;
+            overflow: hidden;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+        }
+    }
+    .modal-image-info {
+        label {
+            font-family: "uzi";
+        }
+    }
+    .modal-btns {
+        padding: 10px 0 10px;
+        text-align: center;
+        button {
+            display: inline-block;
+            width: 105px;
+            height: 40px;
+            line-height: 40px;
+            background: url('/assets/toBoom/images/bottomBG.png') no-repeat center center;
+            background-size: 100%;
+            margin: 0 10px;
+            font-size: 16px;
+            &:first-child {
+                border-radius: 10px;
+                background-color: #f4747e;
+            }
+        }
+    }
+}
+
+.product-filter-bar {
+    .filter-button {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        margin-left: 10px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: #fff url('/assets/toBoom/images/bottomBG.png') no-repeat center center;
+        background-size: 100% 100%;
+        border-radius: 5px;
+    }
+    .ant-select-selection,
+    .ant-input,
+    .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+        border-color: #121213 !important;
+        border-width: 2px;
+    }
+}
+
+.ant-calendar.ant-calendar-time {
+    .ant-calendar-selected-day .ant-calendar-date {
+        background-color: #121213;
+    }
+}
+
+.ant-calendar-time .ant-calendar-footer-btn {
+    color: #121213;
+    a {
+        color: #121213;
+        border-color: #121213;
+    }
+    .ant-calendar-ok-btn {
+        background-color: #121213;
+        color: #fff;
+    }
+}
+
+.ant-calendar .ant-calendar-ok-btn:active,
+.ant-calendar .ant-calendar-ok-btn.active {
+    color: #fff;
+    background-color: #121213;
+    border-color: #121213;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+    border-color: #121213 !important;
+}
+
+.ant-calendar-selected-day .ant-calendar-date:hover,
+.ant-calendar-selected-day .ant-calendar-date {
+    background: #121213 !important;
+}
+
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+    border-color: #121213 !important;
+    color: #121213 !important;
+}
+
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+    border-color: #121213 !important;
+    color: #121213 !important;
+}
+
+.ant-pagination-item-active,
+.ant-pagination-item-active a {
+    border-color: #121213 !important;
+    color: #121213 !important;
+}
+
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+    border-color: #121213 !important;
+}
+
+.ant-pagination-item {
+    border-width: 2px !important;
+}
+
+.ant-pagination-total-text,
+.ant-pagination-options-quick-jumper {
+    font-family: "uzi";
+}
+
+.ant-select-selection:hover,
+.ant-pagination-options-quick-jumper input:hover,
+.ant-pagination-item:focus,
+.ant-pagination-item:hover,
+.ant-pagination-item:focus a,
+.ant-pagination-item:hover a {
+    border-color: #121213 !important;
+    color: #121213 !important;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+    color: #121213 !important;
+    border-color: #121213 !important;
+}
+
+.ant-btn-primary:active,
+.ant-btn-primary.active,
+.ant-btn-primary {
+    background-color: #121213 !important;
+    border-color: #121213 !important;
+}

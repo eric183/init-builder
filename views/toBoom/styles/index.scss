@@ -1,0 +1,104 @@
+@import "components/_font.scss";
+@import "components/_commonValue.scss";
+@import "components/_home.scss";
+@import "components/_animation.scss";
+@import "components/_editor.scss";
+@import "components/_login.scss";
+@import "components/_loading-tool.scss";
+@import "components/_sider.scss";
+@import "components/_cate.scss";
+@import "components/_design-management.scss";
+@import "components/_design-recycle-bin.scss";
+@import "components/_design-recently-modify.scss";
+@import "components/_design-my-collection.scss";
+@import "components/_design-product-management.scss";
+@import "components/_popular_new.scss";
+@import "components/_home-page.scss";
+@import "components/_welcome.scss";
+@import "components/_style_gallery.scss";
+@import "components/_zoo.scss";
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+.root {
+    width: 100%;
+    min-height: 100%;
+    cursor: url("/assets/toBoom/images/cursor.png"), auto;
+}
+
+
+/* optional: show position indicator in red */
+
+body .browser-alert {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    z-index: 10;
+    width: 600px;
+    font-family: 'uzi';
+    margin-left: -300px;
+}
+
+.right-alert-content {
+    text-align: center;
+    color: #000;
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 12px;
+        color: #acaebf;
+    }
+    .pink-text {
+        color: #ffb07a;
+    }
+    .orange-text {
+        color: #ffddc6;
+    }
+}
+
+.cursor-style {
+    cursor: pointer;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dingbu {
+    position: fixed;
+    bottom: 133px;
+    right: 168px;
+    font-size: 55px !important;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.root-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+.shape-index {
+    z-index: 100;
+}

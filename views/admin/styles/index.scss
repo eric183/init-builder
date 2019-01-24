@@ -1,0 +1,27 @@
+@import './components/_main.scss';
+@import './components/_error.scss';
+@import './components/_header.scss';
+@import './components/_loading.scss';
+@import './components/_setting.scss';
+@import './components/_platform.scss';
+@import './components/_nodes.scss';
+@import './components/_staff.scss';
+@import './components/_role.scss';
+@import './components/_account.scss';
+@import './components/_animation.scss';
+@import './components/_jointor.scss';
+@import './components/_album.scss';
+@import './components/_homepage_rec.scss';
+@import './components/_popular.scss';
+@import "./components/_test.scss";
+@import "./components/_homePage.scss";
+@import "./components/_homePageEditor.scss";
+@import "./components/_tagStock.scss";
+@import "./components/_tagGroup.scss";
+@import "./components/_tagPublicField.scss";
+@import './components/_utopia.scss';
+@import './components/_power.scss';
+.upload-column {
+    display: flex;
+    flex-direction: column;
+}

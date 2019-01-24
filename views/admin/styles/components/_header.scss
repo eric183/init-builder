@@ -1,0 +1,133 @@
+.common-header {
+    display: flex;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+    .trigger {
+        font-size: 18px;
+        line-height: 64px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color .3s;
+    }
+    .trigger:hover {
+        color: #1890ff;
+    }
+}
+
+.header-group {
+    display: flex;
+    flex: 1;
+}
+
+.platform-selector {
+    width: 310px;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    span:first-child {
+        margin-right: 15px;
+    }
+}
+
+.header-class-manager {
+    flex-shrink: 0;
+    a {
+        color: #666;
+        transition: font-weight 0.5s;
+    }
+    a:hover {
+        font-weight: bolder;
+    }
+    a:first-child {
+        margin-right: 40px;
+    }
+}
+
+.right-part {
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+    .anticon.setting {
+        transition: transform 1s;
+    }
+    .setting:hover {
+        transform: rotate(180deg) !important;
+        transform: scale(1.5);
+    }
+    .anticon {
+        font-size: 18px;
+        transition: transform 0.2s;
+        &:hover {
+            transform: scale(1.5);
+        }
+        // animation: animateHover 1s ease-in-out;
+    }
+    & * {
+        cursor: pointer;
+    }
+    .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+        span {
+            line-height: initial;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        i {
+            width: 50px;
+            height: 50px;
+            margin-right: 12px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.header-common-icon {
+    margin-right: 35px;
+}
+
+.right-part-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.top-search-content {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: auto;
+    input {
+        position: absolute;
+        width: 0;
+        height: 32px;
+        right: 20px;
+        padding: 0 40px 0 15px;
+        opacity: 0;
+        border: 2px solid #1890ff;
+        border-radius: 8px;
+        background: transparent;
+        transition: all 0.2s linear;
+        outline: none;
+        cursor: auto;
+    }
+    i {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.top-search-content input.top-search-change {
+    width: 60%;
+    // visibility: visible;
+    opacity: 1;
+}

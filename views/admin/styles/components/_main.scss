@@ -1,0 +1,166 @@
+.ios-scroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+.main-layout {
+    height: 100%;
+}
+
+.welcome-ico {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #fff;
+}
+
+.root-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+
+.sider-style {
+    min-height: 100vh;
+    height: 100%;
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        margin: 16px;
+        background: rgba(255, 255, 255, .2);
+        color: #fff;
+    }
+}
+
+.scroll-view {
+    overflow: scroll;
+    // height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container {
+    height: 100vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+.common-content {
+    flex: 1;
+    min-height: 280px;
+    margin: 24px 16px;
+    padding: 24px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.ant-breadcrumb {
+    padding-top: 10px;
+    padding-left: 22px;
+    margin-bottom: -10px;
+}
+
+.common-page {
+    text-align: center;
+    margin-top: 70px;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+}
+
+.login-content {
+    .center-block {
+        height: 380px;
+        width: 410px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        border: 2px solid #40a9ff57;
+        border-radius: 12px;
+        justify-content: space-evenly;
+    }
+    input {
+        margin-top: -35px;
+        border: 2px solid rgba(102, 102, 102, 0.41);
+        border-radius: 5px;
+        outline: none;
+        padding: 4px 13px;
+        font-size: 12px;
+    }
+}
+
+
+/*box-loading*/
+
+.loading-cube {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #f0f2f5;
+    z-index: 999999;
+}
+
+.cube-item {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    &:before {
+        content: '';
+        width: 50px;
+        height: 5px;
+        background: #000;
+        opacity: 0.1;
+        position: absolute;
+        top: 59px;
+        left: 0;
+        border-radius: 50%;
+        animation: cube-shadow .5s linear infinite;
+    }
+    &:after {
+        content: '';
+        width: 50px;
+        height: 50px;
+        background: rgb(64, 169, 255);
+        animation: cube-animate .5s linear infinite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 3px;
+    }
+}
+
+.modal-common-content {
+    label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    span {
+        flex-shrink: 0;
+        margin-right: 26px;
+    }
+    label:last-child span {
+        margin-right: 12px;
+    }
+    a {
+        flex-shrink: 0;
+        margin-left: 35px;
+    }
+}

@@ -1,0 +1,255 @@
+.recycle-bin {
+    position: relative;
+    //width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    background-image: url('/assets/toBoom/images/designManager/designbg.jpg');
+    background-repeat: repeat;
+    background-size: 19px 19px;
+    background-position: 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 75px;
+}
+
+.recycle-bin-pic {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 225px;
+    height: 57px;
+}
+
+.recycle-bin-pic img {
+    width: 100%;
+}
+
+.recycle-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    //margin-top: 40px;
+    width: 100%;
+    //height: 43px;    
+    //margin: 43px 0;
+    padding: 40px 0;
+}
+
+.recycle-menu-btn {
+    width: 145px;
+    height: 42px;
+}
+
+.recycle-menu-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.delete-content {
+    width: 100%;
+    //height:400px;
+    //display: flex;
+    //flex-direction: column;
+    //box-sizing:border-box;
+    //margin-top:70px;
+}
+
+.delete-catalog {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //height: 115px;
+    margin: 50px 0;
+    font-size: 18px;
+    //line-height: 115px;
+    color: #1b2437;
+}
+
+.delete-right {
+    //width:540px;
+    display: flex;
+}
+
+.delete-search {
+    width: 219px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: url('/assets/toBoom/images/designManager/searchBorder.png');
+    background-repeat: no-repeat;
+    background-size: 219px 35px;
+    background-position: 0 0;
+    margin: auto 0;
+}
+
+.delete-search input {
+    float: left;
+    border: 0 none;
+    outline: none;
+    width: 180px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.delete-search .delete-search-pic {
+    float: right;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    background-image: url('/assets/toBoom/images/designManager/search.png');
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-position: 1px 2px;
+}
+
+.recycle-icon-btn {
+    margin-left: 25px;
+    //width:120px;
+    //height:30px;
+    display: flex;
+    align-items: center;
+}
+
+.ant-popover-buttons .ant-btn:hover,
+.ant-popover-buttons .ant-btn:focus {
+    color: #ccc9c9 !important;
+}
+
+.recycle-icon-btn i {
+    padding: 0 17px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.all-recycle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.show-recycle-dec {
+    position: relative;
+    width: 210px;
+    height: 360px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    //background-color: #fff;
+    .show-modify-checkbox {
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        z-index: 2;
+    }
+}
+
+.single-recycle {
+    position: relative;
+    display: flex;
+    width: 210px;
+    height: 298px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: url('/assets/toBoom/images/designManager/singleShowBG.png') top left no-repeat;
+    background-size: 210px 298px;
+    border-radius: 6px;
+    box-shadow: 0 10px 17px 0 rgba(77, 177, 255, 0.19);
+}
+
+.single-recycle-pic {
+    width: 155px;
+    //height: 208px;
+    margin: 0 auto;
+    //display:flex;
+    //justify-content: column;
+    //align-content: center;
+    //padding-top: 22px;
+}
+
+.single-recycle-pic img {
+    width: 100%;
+}
+
+.show-recycle-dec p.recycle-title {
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    //margin-top: 15px;
+    //margin-left: 5px;
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 16px;
+    color: #1b2437;
+    letter-spacing: 0;
+    font-weight: 600;
+    //text-align: left;
+    //font-family: PingFangSC-Medium;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.show-recycle-dec .delete-time {
+    margin-left: 7px;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #98a0a6;
+}
+
+.show-recycle-dec .delete-time span {
+    margin-left: 10px;
+}
+
+.recycle-more-btn {
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    width: 20px;
+    height: 15px;
+    line-height: 20px;
+}
+
+.recycle-more-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.detailed-recycle-btn {
+    position: absolute;
+    top: 6px;
+    right: -63px;
+    width: 78px;
+    //height: 168px;
+    background-color: #f5f5f9;
+    border: 2px solid #000000;
+    z-index: 9;
+    display: none;
+}
+
+.detailed-recycle-btn p {
+    margin: 0;
+    padding: 0;
+    //width: 78px;
+    //height: 28px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: left;
+    font-family: HYHanHeiW;
+    //padding-left: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.detailed-recycle-btn p:hover {
+    background-color: #D9DFE6;
+    cursor: pointer;
+}
+
+.recycle-show {
+    display: block;
+}

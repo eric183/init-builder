@@ -1,0 +1,98 @@
+.monster-hut {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/toBoom/images/BG.jpg') repeat;
+    .m-btn-bk {
+        position: absolute;
+        top: 50%;
+        right: 1px;
+        width: 75px;
+        height: 70px;
+        background: url('/assets/toBoom/images/m_bk.png') no-repeat left top;
+        background-color: 100% 100%;
+        transform: translateX(20px);
+        transition: all 0.5s;
+        &:hover {
+            transform: translateX(0px);
+        }
+    }
+    .rights {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .monsters {
+        position: absolute;
+        top: 11%;
+        left: 10%;
+        z-index: 4;
+        display: flex;
+        flex-direction: row;
+        ul {
+            margin: 76px 100px 0 0;
+            padding: 0;
+            li {
+                width: 159px;
+                height: 159px;
+                cursor: pointer;
+                &:nth-child(2) {
+                    margin: 25px 0;
+                }
+                text-align: center;
+                &:hover,
+                &.active {
+                    img {
+                        width: 159px;
+                        height: 159px;
+                    }
+                }
+                img {
+                    display: inline-block;
+                    width: 140px;
+                    height: 140px;
+                    margin-top: 6px;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        .infor {
+            width: 1248px;
+            height: 699px;
+            background: url('/assets/toBoom/images/monsterbg.png') no-repeat left top;
+            background-size: 100% 100%;
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 23px auto 0;
+            }
+        }
+    }
+    .footer-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .logo {
+        display: block;
+        width: 433px;
+        height: 236px;
+        padding: 1px 0 0 1px;
+        background: url('/assets/toBoom/images/p-corner-b-r.png') no-repeat left top;
+        &::before {
+            content: ''
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 30px 0 0 60px;
+        }
+    }
+}

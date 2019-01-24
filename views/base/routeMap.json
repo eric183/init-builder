@@ -1,0 +1,9 @@
+{
+    "components": [
+        {
+            "label": "楼栋管理",
+            "path": "test/default/index" 
+        }
+        
+    ]
+}

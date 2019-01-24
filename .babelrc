@@ -1,0 +1,8 @@
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-syntax-dynamic-import"]
+    // "plugins": ["dynamic-import-node"]
+    // "plugins": ["transform-decorators-legacy"]
+}
+
+// "@babel/plugin-syntax-dynamic-import"

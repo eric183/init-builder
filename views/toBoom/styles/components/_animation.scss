@@ -1,0 +1,174 @@
+.no-animation {
+    animation: none;
+}
+
+.erea-move {
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+@keyframes cube-animate {
+    17% {
+        border-bottom-right-radius: 3px;
+    }
+    25% {
+        transform: translateY(9px) rotate(22.5deg);
+    }
+    50% {
+        transform: translateY(18px) scale(1, .9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+    }
+    75% {
+        transform: translateY(9px) rotate(67.5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(90deg);
+    }
+}
+
+@keyframes cube-shadow {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1);
+    }
+}
+
+@keyframes toggle-animation {
+    0% {
+        width: 76px;
+        height: 76px;
+    }
+    50% {
+        width: 76px;
+        height: 55%;
+    }
+    100% {
+        width: 260px;
+        height: 55%;
+    }
+}
+
+@keyframes toggle-reverse {
+    0% {
+        width: 260px;
+        height: 55%;
+    }
+    50% {
+        width: 76px;
+        height: 55%;
+    }
+    100% {
+        width: 76px;
+        height: 76px;
+    }
+}
+
+@keyframes arrow-animate {
+    0% {
+        display: none;
+        left: 25px;
+        top: 25px;
+    }
+    
+    50% {
+        display: block;
+        left: 25px;
+        top: 93%;
+    }
+    
+    100% {
+        display: block;
+        top: 93%;
+        transform: rotate(-180deg);
+        left: unset;
+        right: 25px;
+    }
+
+}
+
+@keyframes arrow-reverse {
+    0% {
+        display: block;
+        top: 93%;
+        transform: rotate(rotate(-180deg));
+        left: unset;
+        right: 25px;
+    }
+    
+    50% {
+        display: block;
+        left: 25px;
+        top: 93%;
+    }
+    
+    100% {
+        display: none;
+        left: 25px;
+        top: 25px;
+    }
+
+}
+
+
+.all-collection-content>div:last-child {
+    flex: 1;
+    overflow-x: hidden;
+
+    &>div:first-child {
+        height: 100%;
+    }
+}
+
+
+.transformrole-enter {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(50%);
+}
+
+.transformrole-enter-active {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+    transition: all 300ms ease-out;
+}
+
+.transformrole-exit {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+}
+
+.transformrole-exit-active {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(50%);
+    transition: all 300ms ease-out;
+}
+
+
+.show-history {
+    width: 220px !important;
+    visibility: visible;
+    background: #eef1f4;
+}
+
+.hide-history {
+    width: 0px !important;
+    visibility: hidden;
+    background: #000;
+}
+
+.show-dragger {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide-dragger {
+    visibility: hidden;
+    opacity: 0;
+}

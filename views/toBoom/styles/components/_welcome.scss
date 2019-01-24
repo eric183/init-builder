@@ -1,0 +1,115 @@
+$zIndex1:1;
+$zIndex2: 2;
+$zIndex3:3;
+.welcome-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/toBoom/images/w-bgs.jpg') repeat left top;
+    overflow: hidden;
+    .logo {
+        display: block;
+        width: 140px;
+        height: 60px;
+        margin: 25px 0 0 25px;
+        &::before {
+            content: '';
+            display: none;
+        }
+    }
+    span {
+        position: absolute;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .w-background {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .w-mountain {
+        position: absolute;
+        z-index: $zIndex2;
+        bottom: 0px;
+        width: 100%;
+        visibility: hidden;
+    }
+    .w-sun {
+        left: 50%;
+        margin-left: -350px;
+        visibility: hidden;
+        img {}
+    }
+    .w-animal {
+        z-index: $zIndex1;
+        left: 50%;
+        margin-left: -250px;
+        bottom: 510px;
+        visibility: hidden;
+        img {}
+    }
+    .w-title {
+        z-index: $zIndex3;
+        left: 50%;
+        bottom: -167px;
+        margin-left: -410px;
+    }
+    .w-strip {
+        z-index: $zIndex2;
+        left: 50%;
+        bottom: -95px;
+        margin-left: -257px;
+    }
+    .btn {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        margin-left: -100px;
+        z-index: $zIndex3;
+        width: 202px;
+        height: 50px;
+        text-align: center;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 25px;
+        cursor: pointer;
+        opacity: 0;
+        text-align: center;
+        border: 1px solid #fff;
+        em,
+        i {
+            border-radius: 25px;
+        }
+        em {
+            display: inline-block;
+            background-color: #f5a823;
+            width: 0;
+            height: 48px;
+        }
+        i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 48px;
+            line-height: 48px;
+            font-style: normal;
+            font-weight: bolder;
+        }
+    }
+    .rights {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        z-index: $zIndex3;
+    }
+}

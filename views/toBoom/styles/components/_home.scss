@@ -1,0 +1,188 @@
+
+.home-content {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background: #f9eee1;
+
+    .fake-content {
+        position: relative;
+        border-radius: 50%;
+        z-index: 21;
+        background: #fff;
+        transition: all 0.1s ease;
+
+    }
+    
+    .modal-content {
+        position: relative;
+        background: red;
+        border-radius: 50%;
+        transition: all 0.1s ease;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // transition: all 0.2s ease;
+
+    }
+
+    .hide-modal-content {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .modal-show {
+        display: flex;
+    }
+
+   
+
+    .modal-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        left: 0;
+        top: 0;
+    }
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+	// bottom: 0;
+	// display: flex;
+    // flex-direction: column;
+    // background: #f9eee1;
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #efe1ca;
+        // object-fit: fill;
+        z-index: 999999;
+    }
+
+    .pieces-block {
+        position: relative;
+        width: 51.2%;
+        height: 100%;
+        margin: auto;
+        // padding-top: 5.6%;
+
+        img {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            margin-top: -74%;
+        }
+    }
+
+    .design-button {
+        position: absolute;
+        bottom: 6.67%;
+        left: 37.67%;
+        // display: none;
+        padding: 2.13% 6.67%;
+        background: #2a2f36;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        // transition: 2s all;
+    }
+
+    section {
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .neckline {
+        width: 24.4%;
+        height: 22.8%;
+        top: 13.6%;
+        left: -0.53%;
+    }
+    
+    .sleeve {
+        width: 21.8%;
+        height: 24.1%;
+        top: 35.9%;
+        left: 2%;
+
+    }
+    
+    .pocket {
+        width: 21.6%;
+        height: 24.9%;
+        top: 58.7%;
+        left: 2.27%
+    }
+    
+    .belt {
+        width: 20.8%;
+        height: 24.4%;
+        top: 13.8%;
+        right: 0.44%;
+    }
+
+    .design-text {
+        width: 38.4%;
+        height: 29%;
+        right: -10%;
+        top: 48%;
+    }
+}
+
+.popout-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.commonpagemove-enter {
+    opacity: 0.01;
+}
+
+.commonpagemove-enter.commonpagemove-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.commonpagemove-leave {
+    opacity: 1;
+}
+
+.commonpagemove-leave.commonpagemove-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}

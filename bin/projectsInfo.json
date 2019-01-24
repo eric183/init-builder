@@ -1,0 +1,33 @@
+{
+    "version": "1.0",
+    "author": "ericKuang",
+    "name": "front-builder-config",
+    "config": {
+        "stringToHtmls": {
+            "devStr": "http://system.wow-trend.test",
+            "prodStr": "http://service.wow-trend.com"
+        },
+        "projects": [
+            {
+                "name": "admin",
+                "path": "admin/main.jsx"
+            },
+            {
+                "name": "base",
+                "path": "base/main.js"
+            },
+            {
+                "name": "toBoom",
+                "path": "toBoom/main.jsx"
+            },
+            {
+                "name": "ts",
+                "path": "ts/app.tsx"
+            }
+        ],
+        "dev": {
+            "name": "base",
+            "path": "base/main.js"
+        }
+    }
+}

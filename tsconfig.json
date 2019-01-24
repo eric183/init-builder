@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./assets/",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "module": "es6",
+        "moduleResolution": "node",
+        "target": "es5",
+        "jsx": "react",
+        "isolatedModules": false,        
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "lib": ["es2015", "dom"],
+        "types": ["react"],
+        "declaration": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "emitDecoratorMetadata": true,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "views/ts/**/*",
+        "views/admin/**/*",
+        "views/toBoom/**/*"
+    ]
+}
