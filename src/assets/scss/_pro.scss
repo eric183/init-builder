@@ -1,0 +1,724 @@
+.look{
+    color:#17B3A3;
+    cursor: pointer;
+}
+html body{
+  font-size: 12px;
+}
+.ml80{
+  margin-left: 80px;
+}
+.ml10{
+    margin-left:10px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.ml30{
+    margin-left: 30px;
+}
+.ml40{
+    margin-left:40px;
+}
+.mr30{
+  margin-right: 30px;
+}
+.mt0{
+  margin-top: 0;
+}
+.bt0{
+  border-top:0;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt30{
+    margin-top: 30px;
+  }
+.mr10{
+    margin-right: 10px;
+}
+.pl40{
+    padding-left: 40px;
+}
+.pl10{
+  padding-left: 10px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+// 解决element表格头和内容宽度不一致的问题
+body .el-table th.gutter{
+  display: table-cell!important;
+}
+em{
+    font-style: normal
+  }
+.clor_success{
+    color:#67c23a
+}
+.success{
+  color:#67c23a
+}
+.warning{
+  color:#E6A23C
+}
+.danger{
+  color:#F56C6C
+}
+.info{
+  color:#909399
+}
+.rich_text{
+  img{
+    width: 300px;
+  }
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.color_name{
+  color:#3E8EF7;
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 1px solid #3E8EF7;
+}
+.tabNav{
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.textcenter{
+  text-align: center;
+}
+.textright{
+    text-align: right;
+}
+// 弹框中的内联布局
+.el-dialog .popr{
+  display: flex;
+  justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+.el-card__body{
+    padding: 10px !important;
+}
+.el-table{
+    font-size: 12px !important;
+}
+.el-submenu .el-menu-item{
+    min-width: 185px;
+}
+// 按钮点击的时候变为主题色
+button.authUser{
+  display: inline-block;
+  padding:2px 8px;
+  border: 1px solid #dcdfe6;
+  cursor: pointer;
+  border-radius: 5px;
+  color:#606266;
+}
+button.active { 
+  background: #3E8EF7;
+  border-color:#3E8EF7;
+  color:#fff;
+  border-radius: 5px;
+}
+
+.navlist{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    .list{
+        margin-top:-10px;
+        .el-tag{
+            margin-left:10px;
+            padding:0;
+            cursor: pointer;
+            span{
+                display: block;
+                padding:0 10px;
+            }
+            span.active{
+                background: #17B3A3;
+                color:#fff;
+            }
+        }
+    }  
+}
+.doornav{
+    margin-top:-10px;
+    margin-bottom:10px;
+    .list{
+        margin-top:-10px;
+        .el-tag{
+            margin-left:10px;
+            padding:0;
+            cursor: pointer;
+            span{
+                display: block;
+                padding:0 10px;
+            }
+            span.active{
+                background: #17B3A3;
+                color:#fff;
+            }
+        }
+    }
+}
+.operationsearch{
+    text-align: right;
+}
+
+// 新增楼栋时候的楼层
+.doorlistblock{
+    li>span{
+            display: inline-block;
+            width:20%;
+            text-align: center;
+            border:1px solid #ccc;
+            input{
+                border:none;
+                width:80%;
+                height: 100%;
+            }
+    }
+}
+// 去掉了tab头部选项卡效果，将下面的main移上来
+.site-content--tabs{
+    padding:5px !important;
+}
+// 新增企业的时候 选择的楼栋楼层
+.buildBlock{
+    display: flex;
+    justify-content: space-between;
+}
+// switch
+.el-switch__label span{
+    color: #999999;
+    font-size: 12px !important;
+  }
+.el-switch span.is-active span{
+    color: #3E8EF7;
+  }
+  // esta 物业服务模块的详情弹框
+.esta_detail{
+  display: flex;
+ .esta_con{
+    flex: 1 ;
+    padding:0 12px; 
+    border-radius: 6px;
+ }
+ .esta_con2{
+    flex: 1 ;
+    margin-left: 12px;
+ }
+}
+.esta_title{
+  border-bottom: 1px solid #ccc;
+}
+// 工单详情
+.tickblock{
+    .tickblock{
+        position: relative;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          display: flex;
+          span{
+            width: 25%;
+            text-align: center;
+            border: 1px solid #ebeef5;
+            padding: 22px 0;
+            font-size: 12px;
+          }
+        }
+        .dataDetail{
+            span{
+              border-top: 0;
+            }
+        }  
+      }
+      p.tick_state{
+        font-size: 14px;
+        font-weight: 700;
+      }
+      p.tickDetail{
+        display: flex;
+        border: 1px solid #ebeef5;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        label{
+          width: 80px;
+          font-size: 14px;
+          font-weight: 700;
+        }
+        span{
+          flex:1
+        }
+      }
+      span.footer{
+        display: inline-block;
+        margin-left: 70px;
+        margin-top: 20px;
+      }
+      span.footer_action{
+        display: inline-block;
+        margin-left: 88px;
+        margin-top: 20px;
+      }
+      .tickform{
+        border: 1px solid #ebeef5;
+        padding: 10px 0;
+          h3{
+              padding-left: 15px;
+          }
+          h5{
+          margin-left: 80px;
+          margin-top: 0px;
+          margin-bottom: 10px;
+          color:#aaa;
+        }
+      }  
+      .deleteTick{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+      }
+}
+// 内容运营--资讯管理
+  .activity-detail-content{
+    img{
+      max-width: 100%;
+      height:auto;
+    }
+  } 
+// 电商系统模块
+.tabletitle{
+  height: 30px;
+}
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.el-card__body{
+  padding: 10px !important;
+}
+li{
+    list-style: none;
+}
+// 订单样式
+.order >>> .order-list .el-form-item{
+  padding-left: 30px;
+  margin: 10px 0 
+}   
+.order >>> .el-input{
+    width: 200px
+}
+.list-title{
+  padding-left: 30px;
+  line-height: 40px;  
+}     
+.order-list{
+  background: #fff;
+  margin: 5px 0 10px;
+  .list-type{
+    overflow:hidden;
+    li{
+      float:left;
+      width: 120px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #606266;
+      border-left: 1px solid #ebeef5;
+      border-top: 1px solid #ebeef5;
+      text-align: center;
+      cursor: pointer;
+    }
+    li:last-child
+    {border-right: 1px solid #ebeef5}
+    li:hover{
+      color: #fff;
+      background: #4191f1;  
+    }
+    .active{
+      color: #fff;
+      background: #4191f1;
+    }
+    }
+}
+.input-tips{
+  color: red;  
+}
+
+// 查看订单详情样式
+.order >>> .el-table thead.is-group th{
+  background: #fff;
+}
+.order{
+  .order-status{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px 30px;
+    height: 60px;
+    line-height: 60px;  
+    background: #fff;
+    .status-txtinfo{
+      display: inline-block;
+      margin-right: 40px;
+      label{
+        font-size: 16px;
+      }
+      span{
+        color: #67c23a;
+        font-size: 18px;
+      }
+    }
+  }
+  .order-info{
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    text-align: center;
+    li{
+      float: left;
+      width: 334px;
+      height: 80px;
+      border: 1px solid #ebeef5;
+      color: #909399;
+      font-weight: 700;
+      p{
+        line-height: 40px;
+      }
+      p:last-child{
+        overflow: hidden;
+        padding: 0 15px;
+        text-overflow: ellipsis;
+        font-weight: 400;
+        border-top: 1px solid #ebeef5;
+      }
+    }
+  }
+  .order-person{
+    border-top: none;
+    li:first-child{
+      width: 205px;
+    }
+    li:nth-child(2){
+      width: 350px;
+    }
+    li:nth-child(3){
+      width: 600px;
+    }
+    li:nth-child(4){
+      width: 488px;
+    }
+  }
+  .order-text{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+    border: 1px solid #ebeef5;
+    background: #fff;
+  }
+  .order-good{
+    margin-bottom: 20px;  
+    .order-total{
+      background: #fff;
+      height :50px;
+      line-height: 50px;
+      text-align: right;
+      span{
+        margin-right: 50px;
+        color: #666;
+      }      
+      em{
+       font-style: normal;
+       font-weight: 700px;
+       margin-left: 5px;
+       color: #666;
+      } 
+    }
+  }
+}    
+// 首页管理
+.storedetail >>> .el-form-item{
+    margin: 10px 0;
+  }
+.storedetail >>> a{
+    color: #606266;
+  }
+.storedetail >>> .el-form-item__label{
+    width: 70px!important;
+  }
+.storedetail >>> .el-form-item__content{
+    margin-left: 0!important;
+  }
+.storedetail >>> .el-input__inner{
+    width: 80%!important;
+  }
+.storedetail >>> .el-textarea__inner{
+    width: 80%!important;
+  }
+.storedetail >>> .el-select .el-input__inner{
+    width: 100%!important;
+  }            
+.btn-add{
+    float:right;
+    margin: 10px 80px 0 0;
+  }
+.breadcrumb{
+    height: 50px;
+    background: #fff;
+    padding-left: 30px;
+  }
+.dialog-left{
+    display: inline-block;
+    margin-right: 10px;
+    em{
+        color: red;
+      } 
+}
+.dialog-left+div{
+    display: inline-block;
+    position: absolute;
+    left: 82px;
+}
+.morestore >>> .el-form-item{
+  padding-left: 30px;
+  margin: 10px 0;
+}
+// 店铺管理模块
+.storedetail >>> .el-upload{
+  position: relative;
+}
+.storedetail{
+  .el-icon-plus{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%)
+  }
+  .avatar{
+    position: relative;
+    z-index:100;
+    width:148px;height:148px
+  }
+  .avatar2{
+    position: relative;
+    z-index:100;
+    width:144px;height:144px;
+  }
+  .divBox{
+    display: flex;
+  }
+  .divBox .advertImage{
+    width: 50%;
+    display: inline-block;
+  }
+  .addicon{
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .advertImage >>> .el-form-item__content{
+    width:148px!important;  
+    height:148px!important; 
+    overflow:hidden!important; 
+  } 
+  .openListTime{
+    display: flex;
+    .inlineDiv{
+      display: flex;
+      margin-left: 10px;
+    }
+  }
+}
+// 店铺信息的图片样式问题
+.storedetail .el-upload{
+    width:148px;
+    height: 148px;
+    overflow: hidden;
+    img{
+      width:148px;
+      height: 148px;
+    }
+}
+.advertImage .el-form-item__content+div{
+  width:148px!important;
+  height: 148px!important;
+  overflow: hidden;
+}
+// 商品详情样式展示
+.goodsDetail{
+    img{
+          margin-right: 10px;
+          width:120px;
+          height:auto;
+        }
+    input{
+      color:#606266 !important;
+    }
+}
+// 店铺信息管理
+.stoinfo{
+    .divBox{
+      position: relative;
+        .tip1{
+          position: absolute;
+          top: 135px;
+          left: 120px;
+          color: #aaa;
+          p{
+            margin: 0 0 5px 0;
+          }
+        }
+        .tip2{
+          position: absolute;
+          top: 135px;
+          left: 50%;
+          margin-left: 120px;
+          color: #aaa;
+        }
+        .tip_1{
+          position: absolute;
+          left: 0;
+          top: 18px;
+          color: #f56c6c;
+        }
+        .tip_2{
+          position: absolute;
+          left: 50%;
+          top: 18px;
+          color: #f56c6c;
+        }
+    }
+    .formbox{
+        display: flex;
+        justify-content: space-between;
+        .box{
+          width: 30%;
+        }
+    }
+    .statuebox{
+      display: flex;
+    }
+}
+// 物业账单详情
+.billdetail{
+  .head{
+    position: relative;
+    h1{
+        text-align: center;
+    }
+    .goback{
+      position: absolute;
+      right: 0;
+      top: 50px;
+    }
+  }
+  .top_title{
+      display: flex;
+      label{
+          width: 80px;
+          font-size: 16px;
+          margin-top: 8px;
+      }
+  }
+  ul.datatable{
+      padding: 0;
+      margin: 0;
+      color: #606266;
+      li{
+          display: flex;
+          li:nth-child(1){
+              span{
+                  color: #909399
+              }
+          }
+          span{
+              width: 11.1%;
+              text-align: center;
+              border-top:1px solid #ebeef5;
+              border-right: 1px solid #ebeef5;
+              padding: 14px 0;
+          }
+          span:nth-child(1){
+              border-left:1px solid #ebeef5;
+          }
+      }
+      li:hover{
+          background-color: #F5F7FA;
+      }
+      li.total_small{
+          .span_border{
+              border-right: 0;
+          }
+      }
+      li.total_big{
+          span:nth-child(2){
+              flex: 1;
+              text-align: left;
+          }
+          span{
+              border-bottom: 1px solid #ebeef5;
+          }
+      }
+      li.remark{
+          border-left: 1px solid #ebeef5;
+          border-right: 1px solid #ebeef5;
+          padding: 14px 0 14px 10px;
+      }
+      .last{
+        border: 1px solid #ebeef5;
+      }
+  }
+  .sub{
+    text-align: center;
+  }
+}
+// 超级设备管理--新增，编辑页面
+.super_addor_update{
+  h4{
+    margin: 0;
+  }
+  .avatar{
+     width: 148px;
+     height: 148px;
+  }
+  .popr{
+    display: flex;
+    justify-content: space-between;
+    .device-box{
+      width: 20%;
+      .el-select{
+        width: 100%;
+      }
+      .el-date-editor{
+        width: 100%;
+      }
+    }
+    .remark{
+      width: 46.5%;
+    }
+  }
+  .techolo{
+    min-height: 100px;
+    .tech_box{
+      display: flex;
+      flex-wrap: wrap;
+      .box{
+        width: 15%;
+        margin-right: 10px;
+      }
+    }
+  }
+}

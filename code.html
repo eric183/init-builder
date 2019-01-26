@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>中国储能大厦大堂门禁</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link href="https://cdn.bootcss.com/layer/3.1.0/mobile/need/layer.css" rel="stylesheet">
+	<style>
+		#code{width: 300px;height: 300px;margin:2rem auto .8rem;}
+		.qrcode-title{font-size: 28px;line-height: 28px;text-align: center;}
+		.qrcode-logo{width: 142px;height: 46px;margin: 2rem auto;}
+		.qrcode-logo img{width: 100%;height: 100%;}
+	</style>
+</head>
+<body>
+	<div id="code"></div>
+	<h3 class="qrcode-title">储能大厦大堂门禁</h3>
+	<div class="qrcode-logo">
+		<img src="http://lzmdata.oss-cn-shenzhen.aliyuncs.com/advert/product1531705861988.jpg" alt="">
+	</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<script src="https://cdn.bootcss.com/layer/3.1.0/mobile/layer.js"></script>
+<script type="text/javascript">
+	var h=window.location.search
+	if (h.indexOf("?") != -1) {   
+	  h = h.substr(3);   
+   }
+	console.log(h)
+	$.get("http://bro.f3322.org:7000/business/v1/access/vm/urls/qrcodes",{h:h},function(data){
+         if(data.data.qrcode){
+         	$('#code').qrcode({
+	         render: "canvas", 
+	         width: 300,
+			 height: 300,
+			 correctLevel: 1,
+	         text: data.data.qrcode
+	        });
+         }else{
+         	layer.open({
+		    	content: '无效二维码'
+		    	,style: 'background-color:#4191f1; color:#fff; border:none;'
+		    	,time: 3
+		  	});
+         }   
+		
+	})
+ 
+</script>
+</html>

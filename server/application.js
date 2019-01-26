@@ -17,12 +17,12 @@ const mount = require('koa-mount');
 const router = require('koa-router')();
 
 
-app.use(mount('/assets', serveStatic(path.resolve(__dirname, '../assets'))));
+app.use(mount('/dist', serveStatic(path.resolve(__dirname, '../dist'))));
 
 
 router.get('/admin', (ctx, next)=> {
     // console.log('test');
-    ctx.body = fs.readFileSync(path.join(__dirname, '../pages/index.html'), 'utf8');
+    ctx.body = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8');
     next();
 })
 

@@ -1,7 +1,7 @@
 {
     "version": "1.0",
     "author": "ericKuang",
-    "name": "front-builder-config",
+    "name": "base",
     "config": {
         "stringToHtmls": {
             "devStr": "http://system.wow-trend.test",
@@ -25,9 +25,10 @@
                 "path": "ts/app.tsx"
             }
         ],
+        
         "dev": {
-            "name": "base",
-            "path": "base/main.js"
+            "name": "base-pc-front",
+            "path": "main.js"
         }
     }
 }

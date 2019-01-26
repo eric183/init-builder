@@ -1,0 +1,332 @@
+{
+    "modules": [
+        {
+            "label": "门牌管理",
+            "path": "door/index"
+        },
+        {
+            "label": "楼栋管理",
+            "path": "building/index"
+        },
+        {
+            "label": "授权管理",
+            "path": "author/index"
+        },
+        {
+            "label": "用户管理",
+            "path": "user/index"
+        },
+        {
+            "label": "企业管理",
+            "path": "company/index"
+        },
+        {
+            "label": "电表数据",
+            "path": "electric/index"
+        },
+        {
+            "label": "水表数据",
+            "path": "water/index"
+        },
+        {
+            "label": "燃气数据",
+            "path": "gas/index"
+        },
+        {
+            "label": "设备分组",
+            "path": "group/index"
+        },
+        {
+            "label": "设备管理",
+            "path": "manage/index"
+        },
+        {
+            "label": "用户认证",
+            "path": "userauth/index"
+        },
+        {
+            "label": "部门管理(企业)",
+            "path": "department/index"
+        },
+        {
+            "label": "职务管理(企业)",
+            "path": "position/index"
+        },
+        {
+            "label": "员工列表(企业)",
+            "path": "companyuser/index"
+        },
+        {
+            "label": "广告管理",
+            "path": "advmanage/index"
+        },
+        {
+            "label": "活动管理",
+            "path": "activityList/index"
+        },
+        {
+            "label": "消息推送",
+            "path": "MessagePush/index"
+        },
+        {
+            "label": "咨询管理",
+            "path": "infomation/index"
+        },
+        {
+            "label": "公告管理",
+            "path": "notice/index"
+        },
+        {
+            "label": "企业联盟",
+            "path": "service/index"
+        },
+        {
+            "label": "意见反馈(楼管)",
+            "path": "feedback/index"
+        },
+        {
+            "label": "人员列表(人脸)",
+            "path": "personList/index"
+        },
+        {
+            "label": "访客信息(人脸)",
+            "path": "visitorUser/index"
+        },
+        {
+            "label": "识别记录(人脸)",
+            "path": "discernRecord/index"
+        },
+        {
+            "label": "黑名单管理(人脸)",
+            "path": "blacklist/index"
+        },
+        {
+            "label": "设备分组(人脸)",
+            "path": "faceGroup/index"
+        },
+        {
+            "label": "设备列表(人脸)",
+            "path": "faceDeviceList/index"
+        },
+        {
+            "label": "设备列表(智能开关)",
+            "path": "inteDevicelist/index"
+        },
+        {
+            "label": "会议室列表",
+            "path": "roomList/index"
+        },
+        {
+            "label": "预约订单",
+            "path": "roomOrder/index"
+        },
+        {
+            "label": "相册列表",
+            "path": "gallery/index"
+        },
+        {
+            "label": "相片列表",
+            "path": "photos/index"
+        },
+        {
+            "label": "停车缴费",
+            "path": "park/index"
+        },
+        {
+            "label": "订单列表(快递服务)",
+            "path": "oderlist/index"
+        },
+        {
+            "label": "派件数据统计",
+            "path": "pieOrderChart/index"
+        },
+        {
+            "label": "寄件数据统计",
+            "path": "mailOrderChart/index"
+        },
+        {
+            "label": "平台数据",
+            "path": "datawall/index"
+        },
+        {
+            "label": "数据统计(访客管理)",
+            "path": "VistorDatacount/index"
+        },
+        {
+            "label": "广告管理(访客管理)",
+            "path": "vistorAdvlist/index"
+        },
+        {
+            "label": "物业访客列表(访客管理)",
+            "path": "VistorUserlist/index"
+        },
+        {
+            "label": "企业访客列表(访客管理)",
+            "path": "VistorUsercompany/index"
+        },
+        {
+            "label": "企业管理(访客管理)",
+            "path": "VistorCompany/index"
+        },
+        {
+            "label": "企业信息管理(访客管理)",
+            "path": "VistorCompanyset/index"
+        },
+        {
+            "label": "访客白名单(访客管理)",
+            "path": "VistorUserwhite/index"
+        },
+        {
+            "label": "访客黑名单(访客管理)",
+            "path": "VistorUserblack/index"
+        },
+        {
+            "label": "访客机账号管理",
+            "path": "VistorAccount/index"
+        },
+        {
+            "label": "机房管理",
+            "path": "lablist/index"
+        },
+        {
+            "label": "ODF管理",
+            "path": "odflist/index"
+        },
+        {
+            "label": "光缆管理",
+            "path": "cableslist/index"
+        },
+        {
+            "label": "店铺列表",
+            "path": "stolist/index"
+        },
+        {
+            "label": "类目管理",
+            "path": "category/index"
+        },
+        {
+            "label": "运营商品列表",
+            "path": "operateGoodsList/index"
+        },
+        {
+            "label": "主页推荐分组",
+            "path": "indlist/index"
+        },
+        {
+            "label": "首页推荐分组",
+            "path": "more/index"
+        },
+        {
+            "label": "商品统计",
+            "path": "goodscount/index"
+        },
+        {
+            "label": "订单统计",
+            "path": "ordercount/index"
+        },
+        {
+            "label": "通达顺订单",
+            "path": "orderList/index"
+        },
+        {
+            "label": "商品列表(京东购)",
+            "path": "ShopList/index"
+        },
+        {
+            "label": "专题列表(京东购)",
+            "path": "SpecialList/index"
+        },
+        {
+            "label": "订单列表(京东购)",
+            "path": "JdgOrderList/index"
+        },
+        {
+            "label": "广告列表(京东购)",
+            "path": "JdgAdvList/index"
+        },
+        {
+            "label": "物业报修",
+            "path": "repair/index"
+        },
+        {
+            "label": "投诉建议",
+            "path": "complain/index"
+        },
+        {
+            "label": "咨询求助",
+            "path": "consult/index"
+        },
+        {
+            "label": "管理员列表",
+            "path": "sysUser/index"
+        },
+        {
+            "label": "菜单管理",
+            "path": "menu/index"
+        },
+        {
+            "label": "角色管理",
+            "path": "role/index"
+        },
+        {
+            "label": "就餐列表",
+            "path": "eatList/index"
+        },
+        {
+            "label": "预约列表(企业服务)",
+            "path": "dining/index"
+        },
+        {
+            "label": "数据统计(企业服务)",
+            "path": "customizedDataCount/index"
+        },
+        {
+            "label": "统计视图(企业服务)",
+            "path": "countView/index"
+        },
+        {
+            "label": "食堂人员列表(企业服务)",
+            "path": "roomPersonList/index"
+        },
+        {
+            "label": "食堂人员刷卡记录(企业服务)",
+            "path": "roomPersonRecord/index"
+        },
+        {
+            "label": "设备列表(物管平台)",
+            "path": "superGroup/index"
+        },
+        {
+            "label": "巡检保养计划",
+            "path": "plain/index"
+        },
+        {
+            "label": "巡检保养任务",
+            "path": "task/index"
+        },
+        {
+            "label": "服务工单列表",
+            "path": "workOrderList/index"
+        },
+        {
+            "label": "账单列表",
+            "path": "bill/index"
+        },
+        {
+            "label": "账单明细列表",
+            "path": "billlist/index"
+        },
+        {
+            "label": "部门管理(楼管)",
+            "path": "superDepartment/index"
+        },
+        {
+            "label": "人员管理(楼管)",
+            "path": "superUseradmin/index"
+        },
+        {
+            "label": "职务管理(楼管)",
+            "path": "superPosition/index"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./assets/",
+        "outDir": "./dist/",
         "noImplicitAny": false,
         "removeComments": true,
         "preserveConstEnums": true,

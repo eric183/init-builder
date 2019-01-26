@@ -1,8 +1,13 @@
 {
     "presets": ["@babel/preset-env"],
-    "plugins": ["@babel/plugin-syntax-dynamic-import"]
-    // "plugins": ["dynamic-import-node"]
-    // "plugins": ["transform-decorators-legacy"]
+    "plugins": [
+        "@babel/plugin-syntax-dynamic-import",
+        [
+            "component",
+            {
+                "libraryName": "element-ui",
+                "styleLibraryName": "theme-chalk"
+            }
+        ]
+    ]
 }
-
-// "@babel/plugin-syntax-dynamic-import"

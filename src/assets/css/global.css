@@ -1,0 +1,78 @@
+/*font size*/
+.f10{
+	font-size: 10px;
+}
+.f12{
+	font-size: 12px;
+}
+.f14{
+	font-size: 14px;
+}
+.f15{
+	font-size: 15px;
+}
+.f16{
+	font-size: 16px;
+}
+.f18{
+	font-size: 18px;
+}
+.f20{
+	font-size: 20px;
+}
+.f24{
+	font-size: 24px;
+}
+.f28{
+	font-size: 28px;
+}
+.f32{
+	font-size: 32px;
+}
+.f36{
+	font-size: 36px;
+}
+
+.fb4{
+	font-weight: 400;
+}
+.fb{
+	font-weight: bold;
+}
+
+/*color*/
+.c666{
+	color: #666666;
+}
+.c333{
+	color: #333333;
+}
+.c999{
+	color: #999999;
+}
+
+/*position*/
+.margin_top_12{
+	margin-top: 12px;
+}
+.margin_top_20{
+	margin-top: 20px;
+}
+.pad_l_16{
+	padding-left: 16px;
+}
+
+.h_44{
+	height: 44px;
+}
+.h_40{
+	height: 40px;
+}
+.h_32{
+	height: 32px;
+}
+
+/*text position*/
+.talign_r{
+	text-align: right;
+}
