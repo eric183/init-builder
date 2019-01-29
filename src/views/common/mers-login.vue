@@ -102,7 +102,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
 .loginBlock {
     position: absolute;
     top: 0;

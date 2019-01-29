@@ -15,7 +15,7 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
 .site-wrapper.site-page--not-found {
     position: absolute;
     top: 0;

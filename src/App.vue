@@ -1,13 +1,22 @@
 <template>
-  <transition name="fade">
-    <router-view></router-view>
-  </transition>
+    <transition name="fade">
+        <router-view></router-view>
+        <!-- <Main /> -->
+        
+    </transition>
 </template>
 
 <script>
-  export default {
-  	updated(){
-  		window.exportObj = this;
-  	}
-  }
+// import Main from './views/main';
+
+
+export default {
+    
+    // components: {
+    //     MainLL
+    // }, 
+    updated() {
+        window.exportObj = this;
+    }
+};
 </script>

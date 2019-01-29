@@ -6,7 +6,7 @@ const path = require('path');
 
 const webpack = require('webpack');
 
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin  = require("mini-css-extract-plugin");
 // const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const entryObj = {};
@@ -35,20 +35,28 @@ function resolve(dir) {
 // 	return path.posix.join(assetsSubDirectory, _path);
 // }
 
+const ENV_OBJECT = {
+    NODE_ENV: true
+}
+
 module.exports = (_env) => {
 
     return {
-        mode: "development",
+        // mode: "development",
+        // optimization: {
+        //     nodeEnv: 'development'
+        // },
         entry: entryObj,
 
         // ['babel-polyfill', buildObject.entryFile],
         output: {
             // libraryTarget: 'amd',
 
-            filename: "[name]/index.js",
+            // filename: "[name]/index.js",
+            filename: "index.js",
             // filename: buildObject.outFile,
             path: path.join(__dirname, '..', 'dist'),
-            chunkFilename: './' + buildObj.name + "/[name].js",
+            chunkFilename: "./[name].js",
             publicPath: '/dist/'
 
             // chunkFilename:'js/[id].[chunkhash].js',
@@ -64,8 +72,9 @@ module.exports = (_env) => {
                 loader: 'vue-loader',
                 options: {
                     loaders: {
-                        js: 'babel-loader'
-                    }
+                        js: 'babel-loader',
+                        // css: MiniCssExtractPlugin.loader
+                    },
                 }
             }, {
                 test: /\.(js|jsx)$/,
@@ -88,54 +97,151 @@ module.exports = (_env) => {
             },
             {
                 test: /\.(css|scss)$/,
-                use: [
-                    'vue-style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: { 
-                            importLoaders: 1, 
-                            // modules: true,
-                            alias: {
-                                'fonts/element-icons.ttf': './node_modules/element-ui/lib/theme-chalk/element-icons.ttf',
-                                'fonts/element-icons.woff': 'fonts/element-icons.woff'
-                            }
-                        },
+                // use: [
+
+                //     // {
+                //     //     loader: MiniCssExtractPlugin.loader,
+                //     //     options: {
+                //     //       // you can specify a publicPath here
+                //     //       // by default it use publicPath in webpackOptions.output
+                //     //       publicPath: '../'
+                //     //     }
+                //     // },
+                //     'vue-style-loader',
+                //     // 'style-loader',
+                //     {
+                //         loader: 'css-loader',
+                //         // exclude: /element\-ui\/lib\/theme\-chalk\/index\/\.css/,
+                //         options: { 
+                //             importLoaders: 1, 
+                //             // modules: true,
+                //             // exportOnlyLocals: true
+                //             // localIdentName: '[path][name]'
+                //         },
                         
+                //     },
+                //     {
+                //         loader: 'postcss-loader',
+                //         // exclude: /node_modules/,
+                //         options: {
+                //             ident: 'postcss',
+                //             parser: require('postcss-scss'),
+                //             plugins: [
+                //                 // require('postcss-partial-import')(), 
+                //                 // require('postcss-import')(), 
+                //                 require('precss')(),
+                //                 require('postcss-cssnext')(),
+                //                 require('postcss-preset-env')(),
+                //                 require('cssnano')(),
+
+                //                 // require('postcss-import')(),
+                //                 // 'postcss-import': {},
+                //                 // 'cssnano': {}
+                //                 // require('stylelint')(),
+                //             ]
+                //         }
+                //     }
+                // ]
+                oneOf: [
+                    //只对module生效
+                    {
+                        resourceQuery: /module/,
+                        use: [
+
+                            // {
+                            //     loader: MiniCssExtractPlugin.loader,
+                            //     options: {
+                            //       // you can specify a publicPath here
+                            //       // by default it use publicPath in webpackOptions.output
+                            //       publicPath: '../'
+                            //     }
+                            // },
+                            'vue-style-loader',
+                            // 'style-loader',
+                            {
+                                loader: 'css-loader',
+                                // exclude: /element\-ui\/lib\/theme\-chalk\/index\/\.css/,
+                                options: { 
+                                    importLoaders: 1, 
+                                    modules: true,
+                                    // exportOnlyLocals: true
+                                    // localIdentName: '[path][name]'
+                                },
+                                
+                            },
+                            {
+                                loader: 'postcss-loader',
+                                // exclude: /node_modules/,
+                                options: {
+                                    ident: 'postcss',
+                                    parser: require('postcss-scss'),
+                                    plugins: [
+                                        // require('postcss-partial-import')(), 
+                                        // require('postcss-import')(), 
+                                        require('precss')(),
+                                        require('postcss-cssnext')(),
+                                        require('postcss-preset-env')(),
+                                        require('cssnano')(),
+
+                                        // require('postcss-import')(),
+                                        // 'postcss-import': {},
+                                        // 'cssnano': {}
+                                        // require('stylelint')(),
+                                    ]
+                                }
+                            }
+                        ]
                     },
                     {
-                        loader: 'postcss-loader',
-                        // exclude: /node_modules/,
-                        options: {
-                            ident: 'postcss',
-                            parser: require('postcss-scss'),
-                            plugins: [
-                                
-                                require('precss')(),
-                                require('postcss-preset-env')(),
-                                require('postcss-easy-import')({
-                                    extensions: ['.css', '.scss'] 
-                                }),
-                                // require('postcss-import')(),
+                       
+                        use: [
 
-                                // 'postcss-import': {},
-                                // 'cssnano': {}
-                                // require('stylelint')(),
-                            ]
-                        }
+                            // {
+                            //     loader: MiniCssExtractPlugin.loader,
+                            //     options: {
+                            //       // you can specify a publicPath here
+                            //       // by default it use publicPath in webpackOptions.output
+                            //       publicPath: '../'
+                            //     }
+                            // },
+                            'vue-style-loader',
+                            {
+                                loader: 'css-loader',
+                                options: { 
+                                    importLoaders: 1, 
+                                    // modules: true,
+                                },
+                            },
+                            {
+                                loader: 'postcss-loader',
+                                options: {
+                                    ident: 'postcss',
+                                    parser: require('postcss-scss'),
+                                    plugins: [
+                                        require('precss')(),
+                                        require('postcss-cssnext')(),
+                                        require('postcss-preset-env')(),
+                                        require('cssnano')(),
+                                    ]
+                                }
+                            }
+                        ]
                     }
-
-
                 ]
             },
-            {
-                test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
-                use: [{
-                    loader: 'url-loader',
-                    options: {
-                        limit: 10000
-                    }
-                }]
-            }
+            // {
+            //     test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
+            //     include: [
+            //         path.resolve('..', 'src'),
+            //         path.resolve('..','node_modules/element-ui/')],
+            //     use: [{
+            //         loader: 'url-loader',
+            //         options: {
+            //             useRelativePath: true,
+            //             limit: 10000
+            //         }
+            //     }]
+            // }
                 // {
                 //     test: /\.(css|scss)$/,
                 //     use: ExtractTextPlugin.extract({
@@ -153,41 +259,59 @@ module.exports = (_env) => {
                 //         ],
                 //     }),
                 // },
-                // {
-                // 	test: /\.svg$/,
-                // 	loader: "svg-sprite-loader",
-                // 	include: [resolve("src/icons")]
-                // },
-                // {
-                // 	test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-                // 	loader: "file-loader",
-                // 	exclude: [resolve("src/icons")],
-                // 	options: {
-                // 		limit: 10000,
-                // 		// name: "img/[name].[hash:7].[ext]"
-                // 	}
-                // },
-                // {
-                // 	test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
-                // 	loader: "file-loader",
-                // 	options: {
-                // 		limit: 10000,
-                // 		// name: "media/[name].[hash:7].[ext]"
-                // 	}
-                // },
-                // {
-                // 	test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-                // 	loader: "file-loader",
-                // 	options: {
-                // 		limit: 10000,
-                // 		// name: "fonts/[name].[hash:7].[ext]"
-                // 	}
-                // }
+                {
+                	test: /\.svg$/,
+                	loader: "svg-sprite-loader",
+                	include: [
+                        resolve("src/icons"),
+                        // resolve("src/assets/css/icon")
+                    ]
+                },
+                {
+                	test: /\.(png|jpe?g|gif)(\?.*)?$/,
+                	loader: "file-loader",
+                	// exclude: [
+                    //     resolve('..', "src/icons")
+                    // ],
+                    include: [
+                        resolve('src')
+                    ],
+                	options: {
+                		limit: 10000,
+                		name: "img/[name].[hash:7].[ext]"
+                	}
+                },
+                {
+                	test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+                    loader: "file-loader",
+                    
+                	options: {
+                		limit: 10000,
+                		name: "media/[name].[hash:7].[ext]"
+                	}
+                },
+                {
+                	test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+                    loader: "url-loader",
+                    // include: [
+                    //     resolve('src'),
+                    //     // resolve('node_modules/element-ui')
+                    //     // resolve('node_modules/element-ui/lib/theme-chalk')
+                    // ],
+                	options: {
+                		limit: 10000,
+                		name: "fonts/[name].[hash:7].[ext]"
+                	}
+                }
             ]
 
         },
         plugins: [
             // new ExtractTextPlugin(buildObject.cssOutFile + ".css"),
+            // new MiniCssExtractPlugin({
+            //     filename: "[name].css",
+            //     chunkFilename: "[id].css"
+            // }),
             new VueLoaderPlugin(),
             // function () {
             //     this.plugin("done", function (stats) {
@@ -211,7 +335,7 @@ module.exports = (_env) => {
                 // ENV: JSON.stringify("production"),
                 ENV: JSON.stringify("development"),
                 SERVICE_URL: JSON.stringify(buildObj.config.stringToHtmls.devStr),
-                // 'process.env.NODE_ENV': JSON.stringify('production')
+                'process.env.NODE_ENV': JSON.stringify("development"),
             }),
             new webpack.LoaderOptionsPlugin({
                 options: {
@@ -224,12 +348,13 @@ module.exports = (_env) => {
         resolve: {
             extensions: [".js", ".jsx", ".ts", ".tsx", ".json", ".scss", ".vue"],
             alias: {
-                ENTRY_DIR: path.resolve(__dirname, '../'),
-                util: path.resolve(__dirname, '../', 'util'),
-                "@": path.resolve(__dirname, '../src'),
+                ENTRY_DIR: path.resolve(__dirname, '..'),
+                util: path.resolve(__dirname, '..', 'util'),
+                "@": path.resolve(__dirname, '..', 'src'),
                 // app: path.resolve(componentDir, 'app')
                 'vue$': 'vue/dist/vue.esm.js', // 用 webpack 1 时需用 'vue/dist/vue.common.js'
-
+                // 'element-ui': path.resolve(__dirname, '..', 'node_modules/element-ui/lib'),
+                // 'element-ui/lib/theme-chalk/index.css': path.join(__dirname, '..', 'node_modules/element-ui/lib/theme-chalk/index.css'),
 
                 modules: path.resolve(__dirname, '..', 'node_modules'),
                 // vue: path.resolve(__dirname, 'node_modules/vue/dist/vue.common.js'),
@@ -237,7 +362,8 @@ module.exports = (_env) => {
             },
             modules: [
                 path.resolve(__dirname, '..', 'node_modules'),
-                // path.resolve(componentDir, 'app')
+                path.resolve(__dirname, '..', 'node_modules/element-ui/lib/theme-chalk'),
+                path.resolve(__dirname, '..', 'src/assets/css'),
                 // path.join(__dirname, projectName, buildJson.config.build.entryPath)
             ],
         },

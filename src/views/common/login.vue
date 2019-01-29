@@ -81,7 +81,7 @@ export default {
     },
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss" scoped module>
 .main_box {
     width: 100vw;
     height: 100vh;

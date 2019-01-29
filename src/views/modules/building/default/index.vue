@@ -1,5 +1,6 @@
 <template>
     <div class="mod-user">
+        
         <el-form :inline="true" :model="dataForm" @keyup.enter.native="getDataList()" size="small">
             <el-form-item> <el-input v-model="dataForm.name" placeholder="楼栋名称" clearable></el-input> </el-form-item>
             <el-form-item label="类型:" class="ml10">
@@ -135,7 +136,7 @@ export default {
                 })
                 .catch(() => {});
         },
-        // 后端返回的数字，转换成中文
+    //     // 后端返回的数字，转换成中文
         formatType(row, column) {
             switch (row.type) {
                 case 1:

@@ -1,5 +1,7 @@
 <template>
+    <!-- <Index /> -->
     <Index />
+    
 </template>
 
 
@@ -7,6 +9,7 @@
 import Index from './default';
 
 export default {
+    
     components: {
         Index
     }

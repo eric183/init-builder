@@ -21,7 +21,7 @@ let formatRoute = (array) => {
     return array.map((foo)=> {
         return (`{
             path: "/${foo.path}", 
-            component: () => import("../views/modules/${foo.path}")
+            component: () => import("../views/modules/${foo.path}.vue")
         }`)
     })
 };
