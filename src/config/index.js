@@ -167,6 +167,10 @@ const GLOBAL_ROUTES = [
     } //访客管理系统
 ];
 
+routes.unshift({ path: '/home', component: ()=> import('@/views/common/home'), name: 'home', meta: { title: '首页' }});
+
+
+
 const MAIN_ROUTES = {
     path: "/",
     component: () => import("@/views/main"),
@@ -204,38 +208,71 @@ const MAIN_ROUTES = {
 };
 
 // console.log(routes);
+
+
+// 权限
+// 接口
+
 const router = new VueRouter({
 
     routes: GLOBAL_ROUTES.concat(MAIN_ROUTES)
 
 });
 
+http({
+    url: http.adornUrl('/v1/auth/userMenus'),
+    method: 'get',
+    params: http.adornParams({
+        'menuId': 1,
+        'roleId': Vue.cookie.get('roleId')
+    })
+}).then(({ data }) => {
+    //console.log(data.data)
+    if (data && data.code === 200) {
+        // fnAddDynamicMenuRoutes(data.data.menuList)
+        router.options.isAddDynamicMenuRoutes = true
+        sessionStorage.setItem('menuList', JSON.stringify(data.data.menuList || '[]'))
+        sessionStorage.setItem('permissions', JSON.stringify(data.data.permissions || '[]'))
+        next({ ...to, replace: true })
+    } else {
+        sessionStorage.setItem('menuList', '[]')
+        sessionStorage.setItem('permissions', '[]')
+        next()
+    }
+}).catch((e) => {
+    console.log(`%c${e} 请求菜单列表和权限失败，跳转至登录页！！`, 'color:blue')
+    router.push({ name: 'login' })
+})
+
+
 
 router.beforeEach((to, from, next) => {  // 添加动态(菜单)路由
-         http({
-            url: http.adornUrl('/v1/auth/userMenus'),
-            method: 'get',
-            params: http.adornParams({
-                'menuId': 1,
-                'roleId': Vue.cookie.get('roleId')
-            })
-        }).then(({ data }) => {
-            //console.log(data.data)
-            if (data && data.code === 200) {
-                // fnAddDynamicMenuRoutes(data.data.menuList)
-                router.options.isAddDynamicMenuRoutes = true
-                sessionStorage.setItem('menuList', JSON.stringify(data.data.menuList || '[]'))
-                sessionStorage.setItem('permissions', JSON.stringify(data.data.permissions || '[]'))
-                next({ ...to, replace: true })
-            } else {
-                sessionStorage.setItem('menuList', '[]')
-                sessionStorage.setItem('permissions', '[]')
-                next()
-            }
-        }).catch((e) => {
-            console.log(`%c${e} 请求菜单列表和权限失败，跳转至登录页！！`, 'color:blue')
-            router.push({ name: 'login' })
-        })
+    
+    
+        // http({
+        //     url: http.adornUrl('/v1/auth/userMenus'),
+        //     method: 'get',
+        //     params: http.adornParams({
+        //         'menuId': 1,
+        //         'roleId': Vue.cookie.get('roleId')
+        //     })
+        // }).then(({ data }) => {
+        //     //console.log(data.data)
+        //     if (data && data.code === 200) {
+        //         // fnAddDynamicMenuRoutes(data.data.menuList)
+        //         router.options.isAddDynamicMenuRoutes = true
+        //         sessionStorage.setItem('menuList', JSON.stringify(data.data.menuList || '[]'))
+        //         sessionStorage.setItem('permissions', JSON.stringify(data.data.permissions || '[]'))
+        //         next({ ...to, replace: true })
+        //     } else {
+        //         sessionStorage.setItem('menuList', '[]')
+        //         sessionStorage.setItem('permissions', '[]')
+        //         next()
+        //     }
+        // }).catch((e) => {
+        //     console.log(`%c${e} 请求菜单列表和权限失败，跳转至登录页！！`, 'color:blue')
+        //     router.push({ name: 'login' })
+        // })
     
     
     

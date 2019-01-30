@@ -4,7 +4,7 @@ import router from '@/config/index';
 import store from "@/store"; // api: https://github.com/vuejs/vuex
 // console.log(SERVICE_URL);
 // console.log(ENV);
-console.log(process.env.NODE_ENV + 'dasfadsfadsdfsadfdas');
+// console.log(process.env.NODE_ENV + 'dasfadsfadsdfsadfdas');
 
 import VueCookie from "vue-cookie"; 
 
@@ -26,8 +26,8 @@ import httpRequest from "@/utils/httpRequest"; // api: https://github.com/axios/
 import { isAuth } from "@/utils";
 import cloneDeep from "lodash/cloneDeep";
 // import "@/assets/css/iconfont.css";
-
-
+window.SITE_CONFIG = {};
+console.log(process.env.NODE_ENV);
 
 import "@/components/dynamic-form";
 
@@ -82,7 +82,7 @@ Vue.prototype.$http = httpRequest; // ajax请求方法
 Vue.prototype.isAuth = isAuth; // 权限方法
 
 
-// window.SITE_CONFIG["storeState"] = cloneDeep(store.state);
+window.SITE_CONFIG["storeState"] = cloneDeep(store.state);
 
 
 new Vue({

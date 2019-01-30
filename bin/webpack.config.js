@@ -42,7 +42,7 @@ const ENV_OBJECT = {
 module.exports = (_env) => {
 
     return {
-        // mode: "development",
+        mode: "development",
         // optimization: {
         //     nodeEnv: 'development'
         // },
@@ -335,7 +335,7 @@ module.exports = (_env) => {
                 // ENV: JSON.stringify("production"),
                 ENV: JSON.stringify("development"),
                 SERVICE_URL: JSON.stringify(buildObj.config.stringToHtmls.devStr),
-                'process.env.NODE_ENV': JSON.stringify("development"),
+                // 'process.env.NODE_ENV': JSON.stringify("development"),
             }),
             new webpack.LoaderOptionsPlugin({
                 options: {
